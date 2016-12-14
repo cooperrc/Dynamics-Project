@@ -41,4 +41,4 @@ The plot at the end of the function, is simply to show how the force is acting w
 Basically any input values can be given to the function and different results will be outputted.  However, here are some things to keep in mind when determining the inputs:
       1) If the x or y position function is not of 2nd order or higher, the Force required will be zero (second derivative of linear function is zero)
       2) The more values in the time matrix, the more accurate your results will be
-
+      3) If position function is value of t, x, or y -- that variable must be defined earlier or the function will not work 
