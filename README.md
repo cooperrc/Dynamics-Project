@@ -5,7 +5,7 @@ The goal of this project was to create a matlab function that could determine th
 components of force required to move a particle along a given path.  The function (called
 "motion") requires that you give it a time range, a function that gives the position of x,
 a function that gives the position of y, and a mass of the particle *An explanation of
-what each step of the function is doing can be seen directly in the matlab script *
+what each step of the function is doing can be seen directly in the matlab script*
 
 Initially I gave these inputs: 
 
