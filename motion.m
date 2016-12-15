@@ -19,10 +19,10 @@ ax=diff(vx)./diff(t);
 ay=diff(vy)./diff(t);
 %acceleration is change in velocity in y direction divided by change in t.
 %The dot indicates term by term division, rather than matrix by matrix
-Fx=m*ax
+Fx=m*ax;
 %Newtons second Law - Force in x direction is mass times acceleration in x
 %direction
-Fy=m*ay
+Fy=m*ay;
 %Newtons second Law - Force in y direction is mass times acceleration in y
 %direction
 Fx=[Fx(1),Fx];
