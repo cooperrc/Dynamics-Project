@@ -16,6 +16,14 @@ y=4t^2 = [0, 4, 16, 36, 64, 100]
 m=6
 ```
 
+This is an example list:
+
+1. this is item 1
+
+2. this is item two
+
+2. this is item 3 (numbering not important)
+
 Using my knowledge on how to calculate velocity and acceleration based on position, I was assuming my outputs would look something like this:
       Vx = dx/dt = 9t^2 = [0,9,36,81,144,225] -- Since the derivative of a cubic function is a 2nd degree function, I expected this result
       Vy = dy/dt = 8t = [0,8,16,24,32,40] -- Since the derivate of a 2nd degree function is linear, I expected this result
