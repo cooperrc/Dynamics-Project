@@ -45,11 +45,11 @@ Instead of having it be 5 seconds with one second difference between each entry,
 To do this you use the function **linspace(0,5,500)** -- This creates a vector between 0 and 5 with 500 equally spaced entries (or .01 sec between each entry).    
 This results in a vector with values that are basically identical to what I initially expected (I'm not going to list them out, as it is name a 500 column matrix).  
 Example: In the 100th column of new Vx vector (~ 1 sec), the value is 8.95, compared to the expected value of 9.   
-*This slight difference can be contributed to rounding that is done by matlab
+*This slight difference can be contributed to rounding that is done by matlab*
 
-The plot at the end of the function, is simply to show how the force is acting with respect to time.  In this case, the force is increasing linearly in the x direction and is constant in the y direction, just like what was seen earlier. 
+The plot at the end of the function is simply to show how the force is acting with respect to time.  In this case, the force is increasing linearly in the x direction and is constant in the y direction, just like what was seen earlier. 
 
-Basically any input values can be given to the function and different results will be outputted.  However, here are some things to keep in mind when determining the inputs:
-      1) If the x or y position function is not of 2nd order or higher, the Force required will be zero (second derivative of linear function is zero)
-      2) The more values in the time matrix, the more accurate your results will be
-      3) If position function is value of t, x, or y -- that variable must be defined earlier or the function will give an error
+Basically any input values can be given to the function and different results will be outputted.  However, here are some things to keep in mind when determining the inputs:  
+      1. If the x or y position function is not of 2nd order or higher, the Force required will be zero (second derivative of linear function is zero)  
+      2. The more values in the time matrix, the more accurate your results will be  
+      3. If position function is value of t, x, or y -- that variable must be defined earlier or the function will give an error  
