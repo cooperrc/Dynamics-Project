@@ -36,7 +36,7 @@ However, when running the function the actual values that are outputted are:
       Fy = [0,48,48,48,48] -- same
 ````
 The reason for the discrepencies in the velocity vectors that are outputted is due to the "diff" function in matlab.  This function works by taking two neighboring values in a vector and subtracting them (taking the "difference" between them).  
-      For example, the reason the Vx vector looks like it does is because when looking at the differences in the x vector you get: [3,21,57,111,183] divided by the differences in the time vector, or [1,1,1,1,1]
+...+For example, the reason the Vx vector looks like it does is because when looking at the differences in the x vector you get [3,21,57,111,183] divided by the differences in the time vector, or [1,1,1,1,1]
 
 The solution to this is changing the time vector. 
 
