@@ -18,8 +18,7 @@ m=6
 
 Using my knowledge on how to calculate velocity and acceleration based on position, I was assuming my outputs would look something like this:
 ````
-      Vx = dx/dt = 9t^2 = [0,9,36,81,144,225] -- Since the derivative of a cubic function is a 2nd degree function, 
-      I expected this result
+      Vx = dx/dt = 9t^2 = [0,9,36,81,144,225] -- Since the derivative of a cubic function is a 2nd degree function, I expected this result
       Vy = dy/dt = 8t = [0,8,16,24,32,40] -- Since the derivate of a 2nd degree function is linear, I expected this result
       ax = dVx/dt = 18t = [0,18,36,54,72,90] -- The derivative of a 2nd degree function is linear, I expected this result
       ay = dVy/dt = 8 = [8,8,8,8,8,8] -- The derivative of a linear function is constant, I expected this result 
@@ -37,7 +36,7 @@ However, when running the function the actual values that are outputted are:
       Fy = [0,48,48,48,48] -- same
 ````
 The reason for the discrepencies in the velocity vectors that are outputted is due to the "diff" function in matlab.  This function works by taking two neighboring values in a vector and subtracting them (taking the "difference" between them).  
-...*For example, the reason the Vx vector looks like it does is because when looking at the differences in the x vector you get: [3,21,57,111,183] divided by the differences in the time vector, or [1,1,1,1,1]
+...* For example, the reason the Vx vector looks like it does is because when looking at the differences in the x vector you get: [3,21,57,111,183] divided by the differences in the time vector, or [1,1,1,1,1]
 
 The solution to this is changing the time vector. 
 
