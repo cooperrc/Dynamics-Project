@@ -43,7 +43,8 @@ The solution to this is changing the time vector.
 Instead of having it be 5 seconds with one second difference between each entry,  it should be five seconds with a very small difference in time between each entry. 
 
 To do this you use the function **linspace(0,5,500)** -- This creates a vector between 0 and 5 with 500 equally spaced entries (or .01 sec between each entry).  
-          *This results in a vector with values that are basically identical to what I initially expected (I'm not going to list them out, as it is name a 500 column matrix)
+
+   *This results in a vector with values that are basically identical to what I initially expected (I'm not going to list them out, as it is name a 500 column matrix)
         - Example: In the 100th column of new Vx vector (~ 1 sec), the value is 8.95, compared to the expected value of 9. 
         -*This slight difference can be contributed to rounding that is done by matlab
 
