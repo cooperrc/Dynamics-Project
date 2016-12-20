@@ -1,22 +1,30 @@
 # Dynamics-Project
-Honors conversion project 
-The goal of this project was to create a matlab function that could determine the X and Y components of force required to move a particle along a given path. 
-The function (called "motion") requires that you give it a time range, a function that gives the position of x, a function that gives the position of y, and a mass of the particle
-*An explanation of what each step of the function is doing can be seen directly in the matlab script 
+## Honors conversion project 
+
+The goal of this project was to create a matlab function that could determine the X and Y
+components of force required to move a particle along a given path.  The function (called
+"motion") requires that you give it a time range, a function that gives the position of x,
+a function that gives the position of y, and a mass of the particle.  *An explanation of
+what each step of the function is doing can be seen directly in the matlab script*
 
 Initially I gave these inputs: 
-      t= [0:5]
-      x=3t^3 = [0, 3, 24, 81, 192, 375]
-      y=4t^2 = [0, 4, 16, 36, 64, 100]
-      m=6
+
+```
+t= [0:5]
+x=3t^3 = [0, 3, 24, 81, 192, 375]
+y=4t^2 = [0, 4, 16, 36, 64, 100]
+m=6
+```
+
 Using my knowledge on how to calculate velocity and acceleration based on position, I was assuming my outputs would look something like this:
+````
       Vx = dx/dt = 9t^2 = [0,9,36,81,144,225] -- Since the derivative of a cubic function is a 2nd degree function, I expected this result
       Vy = dy/dt = 8t = [0,8,16,24,32,40] -- Since the derivate of a 2nd degree function is linear, I expected this result
       ax = dVx/dt = 18t = [0,18,36,54,72,90] -- The derivative of a 2nd degree function is linear, I expected this result
       ay = dVy/dt = 8 = [8,8,8,8,8,8] -- The derivative of a linear function is constant, I expected this result 
       Fx = m * ax = [0,108,216,324,432,540]
       Fy = m * ay = [48,48,48,48,48,48]
-      
+````      
 However, when running the function the actual outputs are: 
       Vx = [3,21,57,111,183] -- different
       Vy = [4,12,20,28,36] -- different
