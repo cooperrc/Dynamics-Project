@@ -17,6 +17,7 @@ m=6
 ```
 
 Using my knowledge on how to calculate velocity and acceleration based on position, I was assuming my outputs would look something like this:
+
 ````
       Vx = dx/dt = 9t^2 = [0,9,36,81,144,225] -- Since the derivative of a cubic function is a 2nd degree function, I expected this result
       Vy = dy/dt = 8t = [0,8,16,24,32,40] -- Since the derivate of a 2nd degree function is linear, I expected this result
@@ -36,7 +37,8 @@ However, when running the function the actual values that are outputted are:
       Fy = [0,48,48,48,48] -- same
 ````
 The reason for the discrepencies in the velocity vectors that are outputted is due to the "diff" function in matlab.  This function works by taking two neighboring values in a vector and subtracting them (taking the "difference" between them).  
-          For example, the reason the Vx vector looks like it does is because when looking at the differences in the x vector you get *[3,21,57,111,183]* divided by the differences in the time vector, *or [1,1,1,1,1]*
+
+For example, the reason the Vx vector looks like it does is because when looking at the differences in the x vector you get *[3,21,57,111,183]* divided by the differences in the time vector, *or [1,1,1,1,1]*
 
 The solution to this is changing the time vector. 
 
@@ -49,7 +51,8 @@ To do this you use the function **linspace(0,5,500)** -- This creates a vector b
 
 The plot at the end of the function is simply to show how the force is acting with respect to time.  In this case, the force is increasing linearly in the x direction and is constant in the y direction, just like what was seen earlier. 
 
-Basically any input values can be given to the function and different results will be outputted.  However, here are some things to keep in mind when determining the inputs:  
+Basically any input values can be given to the function and different results will be outputted.  However, here are some things to keep in mind when determining the inputs: 
+
       1. If the x or y position function is not of 2nd order or higher, the Force required will be zero (second derivative of linear function is zero)  
       2. The more values in the time matrix, the more accurate your results will be  
       3. If position function is value of t, x, or y -- that variable must be defined earlier or the function will give an error  
